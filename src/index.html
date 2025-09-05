@@ -9,9 +9,17 @@
 </head>
 <body>
   <script src="./main.js"></script>
+  <!-- Optional styles for the visualizer can be defined in a template and then referenced by id in the rhea-visualizer element. --> 
+  <template id="styles">
+    <style>
+      .rhea-reaction-source span {
+        color: blue
+      }
+    </style>
+  </template>
 
   <div class="webPage">
-    <rhea-reaction rheaid="16505" zoom showids></rhea-reaction>
+    <rhea-visualizer styleid="styles" rheaid="16505"></rhea-visualizer>
   </div>
 </body>
 </html>
